@@ -3,9 +3,10 @@
 #include "main.h"
 
 /**
- * _printf - function that produces output according to a format
- * @format: pointer to format
- * Return: int
+ * _printf - produces output according to a format
+ * @format: format string containing zero or more directives
+ *
+ * Return: the number of characters printed (excluding the null byte)
  */
 int _printf(const char *format, ...)
 {
