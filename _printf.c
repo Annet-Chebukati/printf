@@ -10,43 +10,15 @@
  */
 int _printf(const char *format, ...)
 {
-	int count = 0;
 	va_list args;
+	int length = 0;
+
+	if (format == NULL)
+		return (-1);
 
 	va_start(args, format);
 
-	while (*format)
-	{
-		if (*format == '%')
-		{
-			format++;
-			if (*format == '%')
-			{
-				count += putchar('%');
-			}
-			else if (*format == 'c')
-			{
-				count += putchar(va_arg(args, int));
-			}
-			else if (*format == 's')
-			{
-				count += puts(va_arg(args, char *));
-			}
-			else
-			{
-				count += putchar('%');
-				count += putchar(*format);
-			}
-		}
-		else
-		{
-			count += putchar(*format);
-		}
-
-		format++;
-	}
-
+	length = _print_format(format, args);
 	va_end(args);
-
-	return (count);
+	return (length);
 }
