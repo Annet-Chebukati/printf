@@ -6,7 +6,7 @@ This repository stores our solutions to the amazing pair programming prinf proje
 
 _printf - formatted output conversion
 
-#include "holberton.h" int _printf(const char format , ...);
+#include "main.h" int _printf(const char format , ...);
 
 # Description
 
