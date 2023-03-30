@@ -1,69 +1,63 @@
-# [ALX Software Engineering Programme](https://www.alxafrica.com/about/)
+0x11. C - printf team project
 
-This repository stores our solutions to the amazing pair programming prinf project we did at the ALX SWE Programme.
+Group Project:                                                                      
+                                                                                    
+0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
+ a Spur for life                                                                    
+Write a function that produces output according to a format.                        
+                                                                                    
+                                                                                    
+1. Education is when you read the fine print. Experience is what you get if you don'
+t                                                                                   
+Handle the following conversion specifiers:
 
-# 0x11. C - printf
+2. With a face like mine, I do better in print                                      
+Handle the following custom conversion specifiers:                                  
+                                                                                    
+3. What one has not experienced, one will never understand in print                 
+Handle the following conversion specifiers:                                         
+                                                                                    
+4. Nothing in fine print is ever good news                                          
+Use a local buffer of 1024 chars in order to call write as little as possible.      
+                                                                                    
+5. My weakness is wearing too much leopard print                                    
+Handle the following custom conversion specifier:                                   
+                                                                                    
+6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
+hese lies when they see them in print                                               
+Handle the following conversion specifier: p.                                       
+                                                                                    
+7. The big print gives and the small print takes away                               
+Handle the following flag characters for non-custom conversion specifiers:          
+                                                                                    
+8. Sarcasm is lost in print                                                         
+Handle the following length modifiers for non-custom conversion specifiers:         
+                                                                                    
+l                                                                                   
+h                                                                                   
+Conversion specifiers to handle: d, i, u, o, x, X                                   
+                                                                                    
+9. Print some money and give it to us for the rain forests                          
+Handle the field width for non-custom conversion specifiers.                        
+                                                                                    
+10. The negative is the equivalent of the composer's score, and the print the perfor
+mance                                                                               
+Handle the precision for non-custom conversion specifiers.                          
+                                                                                    
+11. It's depressing when you're still around and your albums are out of print       
+Handle the 0 flag character for non-custom conversion specifiers.                   
+                                                                                    
+12. Every time that I wanted to give up, if I saw an interesting textile, print what
+ ever, suddenly I would see a collection                                            
+Handle the - flag character for non-custom conversion specifiers.                   
+                                                                                    
+13. Print is the sharpest and the strongest weapon of our party                     
+Handle the following custom conversion specifier:                                   
+                                                                                    
+14. The flood of print has turned reading into a process of gulping rather than savo
+ring                                                                                
+Handle the following custom conversion specifier:                                   
+                                                                                    
+15. *                                                                               
+All the above options work well together.
 
-_printf - formatted output conversion
-
-#include "main.h" int _printf(const char format , ...);
-
-# Description
-
-The _printf() function produce output according to a format as described below. Also, write output to stdout, the standard output stream.
-
-The _printf() function write the output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument facilities of stdarg(3) are converted for output.
-
-## Format of the format string
-
-The format string is a character string, beginning and ending inits initial shift state, if any. The format string is composed of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification is introduced by the character % and ends with conversion specifier.
-
-## Conversion specifiers
-
-A character that specifies the type of conversion to be applied. The conversion specifiers and their meaning are:
-
-- d, i: The int argument should be signed decimal notation, and the resulting number is written.
-
-- c: The int argument is converted to a char, and the resulting character is written.
-
-- s: The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up to (but not including) a terminating null byte ('\0').
-
-- %: A '%' is written. No argument is converted. The complete conversion specification is '%%'.
-
-# About Functions
-
-## int _write(char c)
-
-This function gets a char parameter and writes the parameter to the stdout, the standard output stream.
-
-## int _print_a_char (va_list args)
-This function gets a variadic arguments list, traverse the list, prints each character of char type and returns the length of the character.
-
-## int _print_a_string (va_list args)
-This function gets a variadic arguments list, traverse the list, prints each string and returns the length of the string.
-
-## int _print_a_integer (va_list args)
-This function gets a variadic arguments list, traverse the list, prints each number of int type and returns the length of the integer.
-
-## int _print_format (const char *format, va_list args)
-This function gets a format to be printed and a variadic arguments list, next to check if the format is valid or invalid and according with the verification the resulting output is written to the standard output stream and returns the format length.
-
-## int _print_spec (char format, va_list args):
-This function gets a format valid to be printed and a variadic arguments list to find the format in the list and selects the appropriate function to execute and writes the format to the standard output stream and returns the length of the valid format.
-
-## int _print_invalid_spec (char prev_format, char format, int count)
-This function gets the previous format of the current format, the actual format and the current count of printed characters. Next, the invalid format is written to the standard output stream and returns the length of the invalid format.
-
-## void _recursion_integer(int a)
-This function gets an integer and prints the last digit of the number as recursion is applied.
-
-## int _validate_char(char _type)
-Gets a type and checks if the passed parameter is present in a structure of valid conversion specifiers. Next, returns if the parameter is valid or invalid.
-
-# Return Value
-Upon successful return, the _printf() function return the number of characters printed (excluding the null byte used to end output to strings).
-
-If an output error is encountered, a negative value is returned.
-
-# Author
-_printf() is written and maintained by Annet Chebukati (annetnasimiyuchebukati@gmail.com) and Gregory Muna (gregorymuna999@gmail.com).
